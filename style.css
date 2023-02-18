@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 112px 30px 112px;
+}
+
+footer div.footerMsg {
+  color: #667085;
+  font-size: 16px;
+  align-self: center;
+}
+
+footer div.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+footer div.icons div {
+  display: flex;
+  align-items: center;
+}
+
+footer div.icons span {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+footer button.chat {
+  /* icon in the button */
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #7f56d9;
+  background-color: #7f56d9;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  width: 56px;
+  height: 56px;
+  align-self: last baseline;
+}
