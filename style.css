@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  background-color: #f9fafb;
 }
 
 body {
@@ -75,10 +74,10 @@ header button.dashBtn span {
 main {
   display: flex;
   flex-direction: column;
+  background-color: #f9fafb;
 }
 
 main div.title {
-  /* font-size: 3em; */
   font-size: 50px;
   align-self: center;
   padding-top: 20px;
@@ -108,11 +107,11 @@ main div.macbookImg img {
 }
 
 /* Footer */
-
 footer {
   display: flex;
   flex-direction: column;
   padding: 96px 112px 30px 112px;
+  background-color: #f9fafb;
 }
 
 footer div.footerMsg {
@@ -151,18 +150,20 @@ footer button.chat img {
   background-color: transparent;
 }
 
+/* @media */
+
 @media (max-width: 800px) {
   * {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    background-color: #f9fafb;
   }
-
+  /* Header */
   header {
     display: flex;
     padding: 0;
     margin: 0;
+    background-color: #ffffff;
   }
 
   header div.logobar {
@@ -200,6 +201,7 @@ footer button.chat img {
     display: block;
     border: 0;
     cursor: pointer;
+    background-color: transparent;
   }
 
   .navbar {
@@ -251,10 +253,7 @@ footer button.chat img {
     color: #ffffff;
   }
 
-  /* Main 
-  overally shirink
-  title - 2line column
-  */
+  /* Main */
 
   main .title span {
     display: block;
@@ -262,6 +261,7 @@ footer button.chat img {
   }
 
   /* Footer */
+
   footer .icons {
     display: flex;
     flex-direction: column;
