@@ -30,6 +30,10 @@ header #menu-icon img {
   display: none;
 }
 
+header #menu-icon button {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -170,16 +174,36 @@ footer button.chat img {
     justify-content: center;
   }
 
-  header div.logobar #menu-icon img {
+  header > .logobar {
+    order: 2;
+  }
+  header > #menu-icon {
+    order: 1;
+    display: block;
+  }
+  header > button {
+    order: 3;
+  }
+
+  header #menu-icon img {
     padding-left: 10px;
-    cursor: pointer;
     width: 20px;
     align-self: center;
     display: block;
   }
 
+  header #menu-icon button {
+    display: block;
+    border: 0;
+    cursor: pointer;
+  }
+
   .navbar {
-    display: initial;
+    display: none;
+  }
+
+  #menu-icon:hover + .navbar {
+    display: block;
   }
 
   header button.dashBtn {
@@ -187,7 +211,7 @@ footer button.chat img {
     margin: 0;
   }
 
-  header div.logobar #menu-icon img:hover > .navbar {
+  header #menu-icon button:focus + .navbar {
     display: initial;
   }
 
@@ -195,7 +219,7 @@ footer button.chat img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 0;
     right: 0;
     background-color: #f9fafb;
